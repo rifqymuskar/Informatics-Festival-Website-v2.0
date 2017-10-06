@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<link rel="stylesheet" type="text/css" href="css/bulma.css">
+	<link rel="stylesheet" type="text/css" href="css/rifqi.css">
+	<link rel="stylesheet" type="text/css" href="css/materialdesignicons.min.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel='stylesheet' id='roboto-css' href='https://fonts.googleapis.com/css?family=RobotoDraft%3A100%2C300%2C400%2C500%2C700&#038;ver=4.4.11' type='text/css' media='all' />
+    <style>
+       #map {
+        height: 400px;
+        width: 100%;
+       }
+    </style>
+
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/rifqi.js"></script>
+</head>
+<body>
+<div class="searchnya" id="test">
+    <i class="mdi mdi-magnify mdi-24px"></i>
+</div>
+
+<div class="modal" id="modal" style="z-index: 1001;">
+  <div class="modal-background"></div>
+  <div class="modal-content">
+	<div class="box">
+			<p class="title is-4 has-text-centered">Pencarian :</p>
+		<div class="control has-icons-left has-icons-right">
+		  <input class="input is-large aaaa" type="text" placeholder="Cari sesuatu..." style="border:2px solid #000; height: 60px;">
+		  <span class="icon is-medium is-left">
+		    <i class="fa fa-search"></i>
+		  </span>
+		</div>
+    </div>
+  </div>
+  <button class="modal-close is-large" aria-label="close" id="close-1" style="color: #000;"></button>
+</div>
+
+<nav class="navbar is-transparent" style="position: fixed; width: 100%; padding-top:10px; z-index: 1000;">
+	<div class="container">
+  <div class="navbar-brand">
+
+    <a class="navbar-item is-hidden-desktop" href="https://github.com/jgthms/bulma" target="_blank">
+      <span class="icon" style="color: #333;">
+        <i class="fa fa-lg fa-github"></i>
+      </span>
+    </a>
+
+    <a class="navbar-item is-hidden-desktop" href="https://twitter.com/jgthms" target="_blank">
+      <span class="icon" style="color: #55acee;">
+        <i class="fa fa-lg fa-twitter"></i>
+      </span>
+    </a>
+
+    <div class="navbar-burger burger" data-target="navMenuTransparentExample">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+  <div id="navMenuTransparentExample" class="navbar-menu">
+    <div class="navbar-end">
+
+        <a class="navbar-item" href="#about">
+          ABOUT
+        </a>
+        <a class="navbar-item " href="#competition">
+          COMPETITION
+        </a>
+     	<a class="navbar-item " href="#procedure">
+          PROCEDURE LOMBA
+        </a>
+        <a class="navbar-item " href="#timeline">
+          TIMELINE
+        </a>
+        <a class="navbar-item " href="#contact">
+          CONTACT US
+        </a>
+
+<div class="navbar-item has-dropdown is-hoverable" style="margin-top: 5px;">
+        
+          <i class="mdi mdi-dots-vertical mdi-24px"></i>
+        
+        <div class="navbar-dropdown ">
+          <a class="navbar-item ah" href="/documentation/overview/start/">
+            Overview
+          </a>
+          <a class="navbar-item ah" href="http://bulma.io/documentation/modifiers/syntax/">
+            Modifiers
+          </a>
+          <a class="navbar-item ah" href="http://bulma.io/documentation/columns/basics/">
+            Columns
+          </a>
+          <a class="navbar-item ah" href="http://bulma.io/documentation/layout/container/">
+            Layout
+          </a>
+          <a class="navbar-item ah" href="http://bulma.io/documentation/form/general/">
+            Form
+          </a>
+          <a class="navbar-item ah" href="http://bulma.io/documentation/elements/box/">
+            Elements
+          </a>
+          
+            <a class="navbar-item is-active ah" href="http://bulma.io/documentation/components/breadcrumb/">
+              Components
+            </a>
+          
+          <hr class="navbar-divider">
+          <div class="navbar-item">
+            <div>
+              <p class="is-size-6-desktop">
+                <strong class="has-text-info">0.5.3</strong>
+              </p>
+              
+                <small>
+                  <a class="bd-view-all-versions" href="/versions">View all versions</a>
+                </small>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+        <a class="navbar-item ebook" href="http://bulma.io/blog/">
+          <a class="button is-danger is-outlined ebook2" style="font-weight: 300; border:2px solid #fff; color: #fff; margin-left:25px;">Download eBook</a>
+        </a>
+
+
+    </div>
+  </div>
+  </div>
+</nav>
+
+<!-- kontent 1 -->
+<div class="kontent-1">
+	<div class="container">
+		
+			<div class="columns">
+				<div class="column is-6" style="margin-top: 175px;">
+					<div class="kontent-1-2 is-clearfix">
+						<p class="subtitle kontent-1-1" style="margin-bottom: 30px;">
+				        Diesnatalies Informatika <strong>INVFEST 2.0</strong>!
+				      	</p>
+				      	
+						<h1 class="title kontent-1-1" style="font-size: 2.6rem; font-weight: 300; line-height: 1.2; margin-bottom: 25px;">Informatics Inovation Festival</h1>
+						<p style="color: #fff; margin-bottom: 35px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br> sed do eiusmod
+				      	tempor incididunt ut labore et dolore magna aliqua.</p>
+
+						<a class="button is-danger is-inverted" style="margin-right:5px;">Baca Lebih Lanjut</a>
+						<a class="button is-danger is-inverted is-outlined af">Tentang Kami</a>
+
+					</div>
+				</div>
+				<div style="position: absolute; top: 230px; right: -170px;">
+					<img src="img/mock2.png" class="image" style="width: 850px;">
+				</div>
+			</div>
+	</div>
+</div>
+<!-- kontent 1 -->
+
+<!-- IT Telkom Purwokerto -->
+<div   id="about" style="position: relative; top:-50px;"></div>
+<div class="telkom" style="z-index: 999; position: relative;">
+	<div class="container">
+		<img src="img/logo.png" class="image" style="width: 375px; margin: 0 auto;">
+		<div class="has-text-centered">
+		<p class="title is-2" style="margin-top:35px; margin-bottom: 15px;">INVFEST 2.0</p>
+
+		<div class="ha-1"></div>
+		<p class="has-text-centered" style="margin-bottom: 75px;">ipsum dolor sit amet, consecteturadipisicing elit,<br>  sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.</p>
+		<div class="columns" style="margin-top:50px;">
+			<div class="column is-4">
+				<img src="img/mock1-1.png" class="image" style="width: 125px; height: 100px; margin: 0 auto; margin-bottom: 25px;">
+				<p class="title is-4">Flexible !</p>
+				<p>Baianat website designs support cross-browsers and are suitable for different technological media.</p>
+			</div>
+			<div class="column is-4">
+				<img src="img/mock1-2.png" class="image" style="width: 125px; height: 110px; margin: 0 auto; margin-bottom: 15px;">
+				<p class="title is-4">Reach All Out</p>
+				<p>Baianat website designs support cross-browsers and are suitable for different technological media.</p>
+			</div>
+			<div class="column is-4">
+				<img src="img/mock1-3.png" class="image" style="width: 125px; height: 100px; margin: 0 auto; margin-bottom: 25px;">
+				<p class="title is-4">Lovable</p>
+				<p>Baianat website designs support cross-browsers and are suitable for different technological media.</p>
+			</div>
+		</div>
+		</div>
+	</div>
+</div>
+<!-- IT Telkom Purwokerto -->
+
+	<div class="container">
+<div class="pemisah-2">
+		<p class="title is-4 has-text-centered" style="margin-bottom: 50px;">Pendapat tentang Invfest</p>
+		<div class="columns">
+			<div class="column is-6">
+				<article class="media">
+				  <figure class="media-left">
+				    <p class="image is-64x64">
+				      <img src="http://bulma.io/images/placeholders/128x128.png">
+				    </p>
+				  </figure>
+				  <div class="media-content">
+				    <div class="content">
+				      <p>
+				        <strong>Didi Supriyadi</strong> <small>@didisupriyadi</small>
+				        <br>
+				        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+				      </p>
+				    </div>
+				  </div>
+				</article>
+			</div>
+			<div class="column is-6">
+				<article class="media">
+				  <figure class="media-left">
+				    <p class="image is-64x64">
+				      <img src="http://bulma.io/images/placeholders/128x128.png">
+				    </p>
+				  </figure>
+				  <div class="media-content">
+				    <div class="content">
+				      <p>
+				        <strong>Mufti Robani</strong> <small>@mufti robani</small>
+				        <br>
+				        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+				      </p>
+				    </div>
+				  </div>
+				</article>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- kontent 3 -->
+<div   id="competition" style="position: relative; top:-50px;"></div>
+<div class="kontent-3">
+	<div class="container">
+		<div class="count-down">
+			<h1 class="title has-text-centered">COMPETITION</h1>
+			<div class="ha-1"></div>
+			<p class="has-text-centered" style="margin-bottom: 75px;">ipsum dolor sit amet, consecteturadipisicing elit,<br>  sed do eiusmod
+		    tempor incididunt ut labore et dolore magna aliqua.</p>
+		    <p class="title is-4 has-text-centered" style="margin:0px;">Menuju Informatis Inovation Competition 2017</p>
+			<div id="clockdiv">
+			  <div>
+			    <span class="days"></span>
+			    <div class="smalltext">Hari</div>
+			  </div>
+			  <div>
+			    <span class="hours"></span>
+			    <div class="smalltext">Jam</div>
+			  </div>
+			  <div>
+			    <span class="minutes"></span>
+			    <div class="smalltext">Menit</div>
+			  </div>
+			  <div>
+			    <span class="seconds"></span>
+			    <div class="smalltext">Detik</div>
+			  </div>
+			</div>
+		</div>
+			<div class="columns">
+				<div class="column is-4">
+					<div class="card">
+					  <header class="card-header">
+					    <p class="card-header-title" style="align-items: center;">
+					      Capture The Flag
+					    </p>
+					  </header>
+					  <div class="card-content">
+					    <div class="content has-text-centered">
+					    	<img src="img/mock1-2.png"><br>
+					      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
+					      <a href="#">@bulmaio</a>. <a href="#">#css</a> <a href="#">#responsive</a>
+					      <br>
+					      <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+					    </div>
+					  </div>
+					</div>
+				</div>
+				<div class="column is-4">
+					<div class="card">
+					  <header class="card-header">
+					    <p class="card-header-title">
+					      Programming Contest Competition
+					    </p>
+					  </header>
+					  <div class="card-content">
+					    <div class="content has-text-centered">
+					    	<img src="img/mock1-2.png"><br>
+					      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
+					      <a href="#">@bulmaio</a>. <a href="#">#css</a> <a href="#">#responsive</a>
+					      <br>
+					      <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+					    </div>
+					  </div>
+					</div>
+				</div>
+				<div class="column is-4">
+					<div class="card">
+					  <header class="card-header">
+					    <p class="card-header-title">
+					     Android Application Competition
+					    </p>
+					  </header>
+					  <div class="card-content">
+					    <div class="content has-text-centered">
+					    	<img src="img/mock1-2.png"><br>
+					      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
+					      <a href="#">@bulmaio</a>. <a href="#">#css</a> <a href="#">#responsive</a>
+					      <br>
+					      <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+					    </div>
+					  </div>
+					</div>
+				</div>												
+			</div>
+			<div class="columns">
+				<div class="column is-4 is-offset-2">
+					<div class="card">
+					  <header class="card-header">
+					    <p class="card-header-title">
+					      Web Design Competition
+					    </p>
+					  </header>
+					  <div class="card-content">
+					    <div class="content has-text-centered">
+					    	<img src="img/mock1-2.png"><br>
+					      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
+					      <a href="#">@bulmaio</a>. <a href="#">#css</a> <a href="#">#responsive</a>
+					      <br>
+					      <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+					    </div>
+					  </div>
+					</div>
+				</div>
+				<div class="column is-4">
+					<div class="card">
+					  <header class="card-header">
+					    <p class="card-header-title">
+					      Design Product Competition
+					    </p>
+					  </header>
+					  <div class="card-content">
+					    <div class="content has-text-centered">
+					    	<img src="img/mock1-2.png"><br>
+					      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
+					      <a href="#">@bulmaio</a>. <a href="#">#css</a> <a href="#">#responsive</a>
+					      <br>
+					      <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+					    </div>
+					  </div>
+					</div>
+				</div>
+
+			</div>
+	</div>
+</div>
+<!-- kontent 3 -->
+
+<!-- kontent 4 -->
+<div id="procedure" style="position: relative; top:-50px;"></div>
+	<div class="container has-text-centered">
+<div class="kontent-4">
+		<h1 class="title" style="margin-bottom: 15px;">PROSEDUR LOMBA</h1>
+		<div class="ha-1"></div>
+
+        <p class="has-text-centered" style="margin-bottom: 75px;">ipsum dolor sit amet, consecteturadipisicing elit,<br>  sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.</p>
+        <div style="border-bottom: 1px dashed #FF4F3F; width: 100%; position: absolute; bottom:155px; z-index: 1;">
+        	<div style="height: 12px; width: 12px; background-color: red; border-radius: 50%; position: absolute; bottom: -6px;"></div>
+        	<div style="height: 12px; width: 12px; background-color: red; border-radius: 50%; position: absolute; bottom: -6px; right: 0px;"></div>
+        </div>
+        <div class="columns">
+        	<div class="column is-4">
+        		<img src="img/mock1-1.png" class="image" style="width: 125px; height: 100px; margin: 0 auto; margin-bottom: 25px;">
+				<p class="title is-4" style="z-index: 2; background-color: #fff; position: relative; width: 200px; margin-left: auto; margin-right: auto;">Pilih Lomba</p>
+				<p>Baianat website designs support cross-browsers and are suitable for different technological media.</p>
+        	</div>
+        	<div class="column is-4">
+        		<img src="img/mock1-1.png" class="image" style="width: 125px; height: 100px; margin: 0 auto; margin-bottom: 25px;">
+				<p class="title is-4" style="z-index: 2; background-color: #fff; position: relative; width: 200px; margin-left: auto; margin-right: auto;">Register</p>
+				<p>Baianat website designs support cross-browsers and are suitable for different technological media.</p>
+        	</div>
+        	<div class="column is-4">
+        		<img src="img/mock1-1.png" class="image" style="width: 125px; height: 100px; margin: 0 auto; margin-bottom: 25px;">
+				<p class="title is-4" style="z-index: 2; background-color: #fff; position: relative; width: 200px; margin-left: auto; margin-right: auto;">Isi Biodata</p>
+				<p>Baianat website designs support cross-browsers and are suitable for different technological media.</p>
+        	</div>
+        </div>
+
+	</div>
+</div>
+<!-- kontent 4 -->
+
+<!-- jadwal penting -->
+<div id="timeline" style="position: relative; top:-50px;"></div>
+<div class="jadwal">
+	<div class="container has-text-centered">
+		<h1 class="title" style="margin-bottom: 15px;">TIMELINE</h1>
+		<div class="ha-1"></div>
+
+		<p class="has-text-centered" style="margin-bottom: 75px;">ipsum dolor sit amet, consecteturadipisicing elit,<br>  sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.</p>
+
+        <table class="table is-bordered is-striped is-narrow is-fullwidth">
+        	<tr>
+        		<th style="text-align: center;" width="50%">Tanggal</th>
+        		<th style="text-align: center;">Kegiatan</th>
+        	</tr>
+        	<tr>
+        		<td>Senin, 25 Oktober 2017 - Selasa, 25 November 2017</td>
+        		<td>Pendaftaran Lomba</td>
+        	</tr>
+        </table>
+
+	</div>
+</div>
+<!-- jadwal penting -->
+
+<!-- kontent 7 -->
+<div class="kontent-7">
+	<div class="container has-text-centered">
+		<p style="color:#fff;">ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod<br>
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+		<div class="ha-1" style="border-bottom: 3px solid #fff; margin-top: 15px;"></div>
+			<div class="ha3">
+			<div class="ha2"><i class="mdi mdi-facebook mdi-36px"></i></div>
+			<div class="ha2"><i class="mdi mdi-twitter mdi-36px"></i></div>
+			<div class="ha2"><i class="mdi mdi-instagram mdi-36px"></i></div>
+			<div class="ha2"><i class="mdi mdi-telegram mdi-36px"></i></div>
+			</div>
+	</div>
+</div>
+<!-- kontent 7 -->
+
+<!-- kontent map -->
+<div id="map"></div>
+<!-- kontent map -->
+
+<!-- kontent 6 -->
+<div id="contact" style="position: relative; top:-50px;"></div>
+<div class="kontent-6">
+	<div class="container has-text-centered">
+
+		<h1 class="title" style="margin-bottom: 15px;">Contact US</h1>
+		<div class="ha-1"></div>
+
+        <p class="has-text-centered" style="margin-bottom: 75px;">ipsum dolor sit amet, consecteturadipisicing elit,<br>  sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.</p>
+
+		<div class="columns">
+			<div class="column is-6">
+
+				<div class="field">
+				  <div class="control">
+				    <input class="input" type="text" placeholder="Text input">
+				  </div>
+				</div>
+				<div class="field">
+				  <div class="control">
+				    <input class="input" type="text" placeholder="Text input">
+				  </div>
+				</div>
+				<div class="field">
+				  <div class="control">
+				    <textarea class="textarea" placeholder="Textarea"></textarea>
+				  </div>
+				</div>
+
+				<div class="field is-grouped">
+				  <p class="control" style="width: 49%;">
+				    <a class="button is-danger is-outlined" style="width: 100%; border-radius: 5px;">
+				      Cancel
+				    </a>
+				  </p>
+				  <p class="control" style="width: 49%;">
+				    
+				    <a class="button is-danger" style="width: 100%; border-radius: 5px;">
+				      Submit
+				    </a>
+				  </p>
+				</div>
+			</div>
+			<div class="column is-6">
+				<h2 class="title is-3 has-text-left">Informasi kontak</h2>
+				<p class="has-text-left">ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur.</p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- kontent 6 -->
+
+<section class="section">
+  <div class="container">
+
+    <p class="title is-5 has-text-centered">Sponsor kami :</p>
+<p class="has-text-centered has-text-grey-light">
+      This page is <strong class="has-text-grey">open source</strong>.
+      Noticed a typo? Or something unclear?
+      <a class="has-text-grey" href="https://github.com/jgthms/bulma/blob/master/docs/documentation/elements/title.html" style="border-bottom: 1px solid currentColor;">
+        Improve this page on GitHub
+      </a>
+    </p>
+    <div class="columns" style="align-items: center; display: flex; justify-content: center; margin-top: 25px;">
+
+	    	<div class="column is-1">
+				<svg viewBox="0 0 480 480" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+					    <g stroke="none" stroke-width="1" fill="#00d1b2" fill-rule="evenodd">
+					      <polygon id="Path" points="136 296 156 156 236 76 336 176 276 236 356 316 236 396"></polygon>
+					    </g>
+					</svg>
+	    	</div>
+	    	<div class="column is-1">
+	    		<img src="img/jquery.png" class="image">
+	    	</div>
+	    	<div class="column is-1">
+	    		<img src="img/laravel.png" class="image">
+	    	</div>
+   		 
+    </div>
+
+</div>
+</section>
+
+<!-- kontent 5 -->
+<div class="kontent-5">
+	<div class="container">
+		<nav class="breadcrumb is-centered" aria-label="breadcrumbs" style="margin-bottom:0px;">
+		  <ul>
+		    <li><a href="#">Informatics Research Club</a></li>
+		    <li><a href="#">Software DEV</a></li>
+		    <li><a href="#">Informatic Engineering</a></li>
+		    <li class="is-active"><a href="#" aria-current="page">Institut Teknologi Telkom Purwokerto</a></li>
+		  </ul>
+		</nav>
+		<nav class="breadcrumb is-centered" aria-label="breadcrumbs" style="margin-bottom: 0px;">
+		  <ul>
+		    <li><a href="#">Office 1 : 089 695 398 322</a></li>
+		    <li><a href="#">Office 2 : 089 392 252 591</a></li>
+		    <li><a href="#">e - mail : irc.st3telkom.ac.id</a></li>
+		  </ul>
+		</nav>
+		<nav class="breadcrumb is-centered" aria-label="breadcrumbs">
+		  <ul>
+		    <li><a href="#">2017 - Dilindungi oleh ***</a></li>
+		  </ul>
+		</nav>
+	</div>
+</div>
+<!-- kontent 5 -->
+
+</body>
+
+    <script>
+      function initMap() {
+        var uluru = {lat: -7.433997, lng: 109.249883};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6kB9rkD4xx74vQvrdBybV5JqDbCeX_-o&callback=initMap">
+    </script>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+
+function getTimeRemaining(endtime) {
+  var t = Date.parse(endtime) - Date.parse(new Date());
+  var seconds = Math.floor((t / 1000) % 60);
+  var minutes = Math.floor((t / 1000 / 60) % 60);
+  var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+  var days = Math.floor(t / (1000 * 60 * 60 * 24));
+  return {
+    'total': t,
+    'days': days,
+    'hours': hours,
+    'minutes': minutes,
+    'seconds': seconds
+  };
+}
+
+function initializeClock(id, endtime) {
+  var clock = document.getElementById(id);
+  var daysSpan = clock.querySelector('.days');
+  var hoursSpan = clock.querySelector('.hours');
+  var minutesSpan = clock.querySelector('.minutes');
+  var secondsSpan = clock.querySelector('.seconds');
+
+  function updateClock() {
+    var t = getTimeRemaining(endtime);
+
+    daysSpan.innerHTML = t.days;
+    hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+    minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+    secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+    if (t.total <= 0) {
+      clearInterval(timeinterval);
+    }
+  }
+
+  updateClock();
+  var timeinterval = setInterval(updateClock, 1000);
+}
+
+var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
+initializeClock('clockdiv', deadline);
+
+$("#test").click(function(){
+	$("#modal").addClass("is-active");
+	$("html").css("overflow", "hidden");
+});
+$("#close-1").click(function(){
+	$("#modal").removeClass("is-active");
+	$("html").css("overflow", "visible");
+});
+
+</script>
+
+
+</html>
+
